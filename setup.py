@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "dl_docs",
+    name = "downlink",
     version = "0.0.0",
     author = "Jake Kara",
     author_email = "jake@jakekara.com",
@@ -13,8 +13,13 @@ setup(
     license = "GPL-3",
     keywords = "example documentation tutorial",
     url = "http://packages.python.org/dl_docs",
-    packages=['dl_docs', 'tests'],
+    packages=['downlink', 'tests'],
     long_description=read('README'),
+    entry_points={
+        'console_scripts': [
+            'downlink = downlink.__main__:main',
+        ],
+    },
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Topic :: Utilities",

@@ -1,6 +1,5 @@
-from dl_docs import PageScraper
 import os, requests
-from urllib.parse import urljoin
+from dl_docs import PageScraper
 
 # url = "https://data.ct.gov/Health-and-Human-Services/DSS-Program-Participation-by-Month-2016-2018/sx77-vjbh"
 url = "https://www.ct.gov/doh/cwp/view.asp?a=4513&q=530462"
