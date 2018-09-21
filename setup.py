@@ -12,7 +12,7 @@ setup(
     description = ("Download all the documents linked from a web page."),
     license = "GPL-3",
     keywords = "example documentation tutorial",
-    url = "http://packages.python.org/dl_docs",
+    url = "https://github.com/jakekara/downlink-py",
     packages=['downlink', 'tests'],
     long_description=read('README'),
     entry_points={
