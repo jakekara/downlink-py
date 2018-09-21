@@ -1,13 +1,14 @@
+""" CLI tool for downloading documents from a web page """
+
 from . import DocumentLinkScraper
 import argparse
 import requests
 import os
 
-# ===================================
-
 def main():
 
-    parser = argparse.ArgumentParser(description='Download all the links from a web page.')
+    parser = argparse.ArgumentParser(
+        description='Download all the links of a given file extension from a web page.')
     parser.add_argument('url', type=str, help='A valid URL to download links from')
     parser.add_argument('dst', type=str, help='A path to a directory in which to save the files')
     parser.add_argument('--ext',
