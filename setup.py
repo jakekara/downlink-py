@@ -12,7 +12,8 @@ setup(
     description = ("Download all the documents linked from a web page."),
     license = "GPL-3",
     keywords = "example documentation tutorial",
-    url = "https://github.com/jakekara/downlink-py",
+    # repository_url = "https://github.com/jakekara/downlink-py",
+    url = "https://github.com/jakekara/downlink-py",    
     packages=['downlink', 'tests'],
     long_description=read('README'),
     entry_points={
@@ -23,6 +24,6 @@ setup(
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Topic :: Utilities",
-        "License :: OSI Approved :: GNU General Public License v3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",        
     ],
 )
