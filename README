@@ -1,0 +1,35 @@
+downlink
+
+	A python library and command line tool for scraping (and
+	downloading) links on a web page.
+
+library
+
+	linkscraper.py
+	    LinkScraper        - class for scraping links from a page 
+
+        document_linkscraper.py
+	    DocumentLinkScraper - subclass of LinkScraper
+			        - class for scraping "document links,"
+	                          which all end in a given file extension,
+	                          such as ".pdf" 
+	__init__.py
+	    - empty -
+
+       __main__.py
+           main()               - entrypoint for command line tool
+
+       
+command line tool
+
+	Basic usage:
+
+	$ downlink "https://www.ct.gov/doh/cwp/view.asp?a=4513&q=530462" output
+
+	The above will download all PDF documents to a folder called
+	"output" which must exist and be writable.
+
+	To download files of a different extension, use the --ext option.
+
+	For more usage details, run downlink --help
+	
