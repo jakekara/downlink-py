@@ -1,5 +1,10 @@
 from __future__ import print_function
-from future.standard_library import install_aliases
+
+try:
+    from future.standard_library import install_aliases
+except:
+    pass
+    
 
 install_aliases()
 from urllib.parse import urljoin, urlsplit, urlunsplit
@@ -54,7 +59,7 @@ class LinkScraper(object):
         if not hasattr(self, "links"):
             self.links = filter(
                 self.filter_links,
-                self.get_all_links())
+                self.get_all_links(href=href))
 
         # return filter(self.links, self.filter_links)
         return self.links

@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "downlink",
-    version = "0.0.0",
+    version = "0.0.5",
     author = "Jake Kara",
     author_email = "jake@jakekara.com",
     description = ("Download all the documents linked from a web page."),
@@ -26,4 +26,8 @@ setup(
         "Topic :: Utilities",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",        
     ],
+    install_requires=[
+        "bs4",
+        "future"
+    ]
 )
