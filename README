@@ -14,10 +14,10 @@ library
 	                          which all end in a given file extension,
 	                          such as ".pdf" 
 	__init__.py
-	    - empty -
+	    imports library classes for cleaner importing
 
        __main__.py
-           main()               - entrypoint for command line tool
+            main()              - entrypoint for command line tool
 
        
 command line tool

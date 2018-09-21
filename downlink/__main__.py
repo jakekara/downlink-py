@@ -1,4 +1,4 @@
-from downlink.document_linkscraper import DocumentLinkScraper
+from . import DocumentLinkScraper
 import argparse
 import requests
 import os
