@@ -24,7 +24,7 @@ def main():
     for link in scraper.get_links():
         print (link["href"], scraper.full_url(link["href"]), link.text)
         # url = link[0]
-        open(os.path.join(args.dst, os.path.basename(link["href"])),"w")\
+        open(os.path.join(args.dst, os.path.basename(link["href"])),"wb")\
             .write(requests.get(args.url).content)
 
 if __name__ == "__main__":
