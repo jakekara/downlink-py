@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "downlink",
-    version = "0.0.5",
+    version = "0.0.7",
     author = "Jake Kara",
     author_email = "jake@jakekara.com",
     description = ("Download all the documents linked from a web page."),
